@@ -4,31 +4,54 @@ This assignment focuses on the design and observation of hash functions using C/
 Students are expected to implement and analyze the behavior of hash functions, 
 evaluate their efficiency, and understand their applications in computer science.
 
-Developer: [Your Name]  
-Email: [Your email]  
+Developer: 1131540 張元誠  
+Email: 0989135145@gmail.com  
+
+---
 
 ## My Hash Function
+
 ### Integer Keys 
 - Formula / pseudocode:
-  ```text
-  [Your implementation here]
+  ```text[
+  unsigned int k = (unsigned int)key;
+  unsigned int hash = k * 2654435761u;  // mix bits
+  int index = (hash >> 16) % m;]
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+
+- Rationale: [Uses Knuth's multiplicative hashing method.
+
+Produces well-distributed results even when m is not prime.
+
+Much better uniformity than simple key % m.]
 
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+  [unsigned long hash = 5381;
+for each character c in str:
+    hash = hash * 33 + c;
+int index = hash % m;
+]
   ```
-- Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+- Rationale: [Uses DJB2 string hashing, simple and fast.
+
+Provides better distribution for English words.
+
+Easy to analyze and demonstrate for homework.]
 
 ## Experimental Setup
-- Table sizes tested (m): 10, 11, 37
-- Test dataset:
-  - Integers: 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60
-  - Strings: "cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"
-- Compiler: GCC and G++
-- Standard: C23 and C++23
+Table sizes tested (m): 10, 11, 37
+
+Test dataset:
+
+Integers: 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60
+
+Strings: "cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"
+
+Compiler: GCC and G++
+
+Standard: C23 and C++23
 
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
