@@ -1,10 +1,24 @@
+<<<<<<< HEAD
 # CS203A – Data Structures
 
+=======
+# 11401_CS203A
+# CS203A – Data Structures
+
+## Student Information
+- **Student Name** ChangYuanCheng
+- **Student ID** 1131540
+  
+>>>>>>> 610c13b3685eb020ede6aa797bc2448caf40e44c
 ## Course Information
 - **Course Title:** Data Structures  
 - **Course Code:** CS203A  
 - **Target Audience**: Undergraduate Students  
+<<<<<<< HEAD
 - **Duration**: 18 Weeks (including Midterm and Final exams)  
+=======
+- **Duration**: 16+2 Weeks (including Midterm and Final exams)  
+>>>>>>> 610c13b3685eb020ede6aa797bc2448caf40e44c
 - **Semester:** 11401  
 - **Credits:** 3  
 - **Instructor:** Yu-Feng Huang  
@@ -17,6 +31,7 @@
     - Monday 14:00-16:00 (R1310)  
     - Wednesday 14:00–16:00 (R1310)  
 
+<<<<<<< HEAD
 ## Course Description
 This course introduces fundamental data structures and algorithms for undergraduate students. Topics include arrays, linked lists, stacks, queues, trees, graphs, hashing, and sorting/searching algorithms. Emphasis is placed on implementation, analysis, and application of data structures in problem solving.
 
@@ -37,3 +52,8 @@ Study notes will be shared to help students consolidate their understanding of t
 
 ## Utility
 Utility scripts and tools will be provided to assist students in completing assignments and understanding course materials. These utilities include code snippets, debugging aids, and performance analysis tools. Refer to the [Utility Tools](Utility/README.md) for more information.
+=======
+## Repository Description
+This course introduces fundamental data structures and algorithms for undergraduate students. Topics include arrays, linked lists, stacks, queues, trees, graphs, hashing, and sorting/searching algorithms. Emphasis is placed on implementation, analysis, and application of data structures in problem solving.
+
+>>>>>>> 610c13b3685eb020ede6aa797bc2448caf40e44c
